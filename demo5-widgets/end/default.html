@@ -18,9 +18,9 @@
 
 		<!-- Main View -->
 		<div id="mainView" data-role="view" data-title="Dream Cars: Home">
-			<ul data-role="listview" data-style="inset" data-type="group" data-source="cars" data-template="carsListTemplate">
+				<ul data-role="listview" data-style="inset" data-type="group" data-source="cars" data-template="carsListTemplate" id="carsList">
 					        
-			</ul>
+				</ul>
 		</div>
 
 		<!-- Main View List View Data Template -->
@@ -77,8 +77,69 @@
 						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
 						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
 						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
+					},{
+						id: 3, make: "Ferrari", model: "458 Italia", brakeHorsepower: 532, 
+						topSpeed: 202, zeroToSixty: 3.04, quarterMile: 10.86, 
+						basePrice: 220000, imageUrl: "content/images/458italia.jpg" ,
+						moreInfoUrl: "http://www.ferrari.com/english/gt_sport%20cars/currentrange/458-italia/Pages/458-Italia.aspx"
+		
+					},{
+						id: 4, make: "Porsche", model: "911 GT2 RS", brakeHorsepower: 620, 
+						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
+						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
+						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
+					},{
+						id: 3, make: "Ferrari", model: "458 Italia", brakeHorsepower: 532, 
+						topSpeed: 202, zeroToSixty: 3.04, quarterMile: 10.86, 
+						basePrice: 220000, imageUrl: "content/images/458italia.jpg" ,
+						moreInfoUrl: "http://www.ferrari.com/english/gt_sport%20cars/currentrange/458-italia/Pages/458-Italia.aspx"
+		
+					},{
+						id: 4, make: "Porsche", model: "911 GT2 RS", brakeHorsepower: 620, 
+						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
+						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
+						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
+					},{
+						id: 3, make: "Ferrari", model: "458 Italia", brakeHorsepower: 532, 
+						topSpeed: 202, zeroToSixty: 3.04, quarterMile: 10.86, 
+						basePrice: 220000, imageUrl: "content/images/458italia.jpg" ,
+						moreInfoUrl: "http://www.ferrari.com/english/gt_sport%20cars/currentrange/458-italia/Pages/458-Italia.aspx"
+		
+					},{
+						id: 4, make: "Porsche", model: "911 GT2 RS", brakeHorsepower: 620, 
+						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
+						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
+						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
+					},{
+						id: 3, make: "Ferrari", model: "458 Italia", brakeHorsepower: 532, 
+						topSpeed: 202, zeroToSixty: 3.04, quarterMile: 10.86, 
+						basePrice: 220000, imageUrl: "content/images/458italia.jpg" ,
+						moreInfoUrl: "http://www.ferrari.com/english/gt_sport%20cars/currentrange/458-italia/Pages/458-Italia.aspx"
+		
+					},{
+						id: 4, make: "Porsche", model: "911 GT2 RS", brakeHorsepower: 620, 
+						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
+						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
+						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
+					},{
+						id: 3, make: "Ferrari", model: "458 Italia", brakeHorsepower: 532, 
+						topSpeed: 202, zeroToSixty: 3.04, quarterMile: 10.86, 
+						basePrice: 220000, imageUrl: "content/images/458italia.jpg" ,
+						moreInfoUrl: "http://www.ferrari.com/english/gt_sport%20cars/currentrange/458-italia/Pages/458-Italia.aspx"
+		
+					},{
+						id: 4, make: "Porsche", model: "911 GT2 RS", brakeHorsepower: 620, 
+						topSpeed: 218, zeroToSixty: 3.38, quarterMile: 11.24, 
+						basePrice: 254000, imageUrl: "content/images/911GT2.jpg",
+						moreInfoUrl: "http://www.porsche.com/microsite/911gt2rs/usa.aspx"
 					}
 				]
+			});
+
+			$(function() {
+				var x = $("#carsList");
+				alert(x.id());
+				$("#carsList").parents(".km-content km-scroll-wrapper km-insetcontent:first").width(200);
 			});
 		    
 		</script>
